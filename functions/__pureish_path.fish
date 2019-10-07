@@ -1,9 +1,9 @@
-function __pureish_prompt_path
-  set --local path_prefix ""
-  set --local path $PWD
-  set --local max_path_length (math $COLUMNS - 20)
-  set --local is_in_home (string match -r $HOME $path)
-  set --local is_in_workspace (string match -r $WORKSPACE $path)
+function __pureish_path
+  set -l path_prefix ""
+  set -l path $PWD
+  set -l max_path_length (math $COLUMNS - 20)
+  set -l is_in_home (string match -r $HOME $path)
+  set -q WORKSPACE; and set -l is_in_workspace (string match -r $WORKSPACE $path)
 
   if test -n "$is_in_home"
     set path (string replace $HOME "" $path)

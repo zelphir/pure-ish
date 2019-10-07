@@ -14,7 +14,8 @@ _NOTE: Requires fish version >= `3.0`._
 
 ### OSX compatibility
 
-Out of the box this theme will not work because OSX uses a BSD version of the `stat` command but the theme uses an option from the GNU/Linux version of `stat`. This is easily fixed if you're willing to use the GNU coreutils by default (which I recommend anyway):
+Out of the box this theme will not work because OSX uses a BSD version of the `stat` command but the theme uses an option from the GNU/Linux version of `stat`.
+This is easily fixed if you're willing to use the GNU coreutils by default (which I recommend anyway):
 
 1. Install [homebrew](https://brew.sh/) if you haven't already.
 1. Before you install the theme or from a bash shell, install GNU coreutils:

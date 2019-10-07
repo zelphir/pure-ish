@@ -1,4 +1,4 @@
-function __pureish_prompt_symbol
+function __pureish_symbol
   set --local prompt_symbol "❯ "
   set --local prompt_color $pureish_color_05
   set --local pre_prompt ""

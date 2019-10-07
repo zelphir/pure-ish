@@ -1,4 +1,4 @@
-function __pureish_prompt_git
+function __pureish_git
   set -l git_working_tree (command git rev-parse --show-toplevel 2>/dev/null)
 
   if test -n "$git_working_tree"

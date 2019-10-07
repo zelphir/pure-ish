@@ -1,5 +1,5 @@
 # root or ssh session
-function __pureish_prompt_root_ssh
+function __pureish_root_ssh
   set -l uid (id -u)
 
   if test \( $uid -eq 0 -o -n "$SUDO_USER" \)
