@@ -42,3 +42,9 @@ set -g pureish_bgcolor_normal (set_color -b normal)
 
 # More bg colors from 256 palette
 set -g pureish_bgcolor_216 (set_color -b ffaf87)
+
+# Symbols
+set -l prefix "["
+set -l suffix "]"
+set -g pureish_git_prefix "$pureish_color_08$prefix"
+set -g pureish_git_suffix "$pureish_color_08$suffix"

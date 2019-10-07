@@ -7,7 +7,7 @@ function __pureish_cmd_duration
     set -l m (math -s0 $duration / 60000 % 60)
     set -l h (math -s0 $duration / 3600000 % 24)
 
-    echo -sn "$pureish_color_03  "
+    echo -sn "$pureish_color_03  $pureish_color_246"
 
     if test $h -gt 0
       echo -sn $h "h "
@@ -17,7 +17,6 @@ function __pureish_cmd_duration
       echo -sn $m "m "
     end
 
-    echo -s $s.$ms "s"
-    echo -sn $pureish_color_normal
+    echo -s $s.$ms "s "
   end
 end
