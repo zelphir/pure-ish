@@ -7,11 +7,9 @@ Yet another port of the [ZSH pure prompt](https://github.com/sindresorhus/pure) 
 ### Install
 
 With [Fisher](https://github.com/jorgebucaran/fisher):
-
 ```fish
 fisher add zelphir/pure-ish
 ```
-
 _NOTE: Requires fish version >= `3.0`._
 
 ### OSX compatibility
