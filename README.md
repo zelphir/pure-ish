@@ -1,6 +1,6 @@
 # `pure-ish` Fish Shell Theme
 
-Yet another port of the [ZSH pure prompt](https://github.com/sindresorhus/pure) to [fish shell](https://github.com/fish-shell/fish-shell) 🐟 with a few tweaks, hence **pure-ish**
+Yet another port of the [ZSH pure prompt](https://github.com/sindresorhus/pure) to [fish shell](https://github.com/fish-shell/fish-shell) 🐟 with a few tweaks, hence **pure-ish**.
 
 ## Usage
 
