@@ -6,10 +6,6 @@ function __pureish_git
     __pureish_git_update_workdir $git_working_tree
 
     echo -n (__pureish_git_remote) \
-      $pureish_git_prefix(string trim (__pureish_git_info))$pureish_git_suffix \
-      ""
-    if set -q __pureish_fetching
-      echo -n "$pureish_color_03•$pureish_color_normal"
-    end
+      $pureish_git_prefix(string trim (__pureish_git_info))$pureish_git_suffix
   end
 end

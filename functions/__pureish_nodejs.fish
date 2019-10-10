@@ -3,6 +3,6 @@ function __pureish_nodejs
   set -l icon_nodejs "$pureish_color_02"
 
   if test -f "package.json"
-    echo " $icon_nodejs $pureish_color_246$node_version "
+    echo "$icon_nodejs $pureish_color_246$node_version"
   end
 end

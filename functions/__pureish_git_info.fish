@@ -1,10 +1,4 @@
 function __pureish_git_info
-  set -g __fish_git_prompt_showupstream "informative"
-  set -g __fish_git_prompt_show_informative_status "yes"
-  set -g __fish_git_prompt_showcolorhints "yes"
-  set -g __fish_git_prompt_showstashstate "yes"
-  set -l git_prompt (fish_git_prompt)
-
   set -g __fish_git_prompt_color_branch 949494
   set -g __fish_git_prompt_color_cleanstate green
   set -g __fish_git_prompt_color_stashstate magenta
@@ -17,5 +11,10 @@ function __pureish_git_info
   set -g __fish_git_prompt_char_upstream_prefix "$pureish_color_08|"
   set -g __fish_git_prompt_char_stateseparator "$pureish_color_08|"
 
-  echo -sn (string replace -r -a '\(|\)' "" $git_prompt)
+  set -g __fish_git_prompt_showupstream "informative"
+  set -g __fish_git_prompt_show_informative_status "yes"
+  set -g __fish_git_prompt_showcolorhints "yes"
+  set -g __fish_git_prompt_showstashstate "yes"
+
+  echo -sn (string replace -r -a '\(|\)' "" (fish_git_prompt))
 end

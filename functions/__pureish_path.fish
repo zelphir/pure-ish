@@ -2,8 +2,8 @@ function __pureish_path
   set -l path_prefix ""
   set -l path $PWD
   set -l max_path_length (math $COLUMNS - 20)
-  set -l is_in_home (string match -r $HOME $path)
-  set -q WORKSPACE; and set -l is_in_workspace (string match -r $WORKSPACE $path)
+  set -l is_in_home (string match -r $HOME/ $path)
+  set -q WORKSPACE; and set -l is_in_workspace (string match -r $WORKSPACE/ $path)
 
   if test -n "$is_in_home"
     set path (string replace $HOME "" $path)
@@ -19,5 +19,5 @@ function __pureish_path
     set path (string replace -ar '(\.?[^/]{1})[^/]*/' '$1/' $path)
   end
 
-  echo $path_prefix$pureish_color_04$path$pureish_color_normal" "
+  echo $path_prefix$pureish_color_04$path$pureish_color_normal
 end

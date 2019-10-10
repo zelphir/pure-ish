@@ -25,8 +25,13 @@ function __pureish_symbol
 
   if test -n "$is_vi_mode" \
     -a "$fish_bind_mode" != "insert"
-    set pre_prompt "$pre_prompt_bgcolor $pre_prompt_type $pureish_bgcolor_normal "
+    set pre_prompt "$pre_prompt_bgcolor $pureish_color_00$pre_prompt_type $pureish_bgcolor_normal "
     set prompt_symbol ""
+  end
+
+  if set -q __pureish_fetching
+    set prompt_color $pureish_color_03
+    echo -n "$pureish_color_03•"
   end
 
   echo -sn $pre_prompt$prompt_color$prompt_symbol$pureish_color_normal
