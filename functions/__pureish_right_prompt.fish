@@ -4,5 +4,5 @@ function __pureish_right_prompt
   set -l docker (__pureish_docker_machine)
   set -l sha (__pureish_git_sha)
 
-  echo -n (string join " " $sha $duration $nodejs $docker)
+  echo -n (string join " " $duration $sha $nodejs $docker)
 end
