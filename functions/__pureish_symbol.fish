@@ -8,13 +8,13 @@ function __pureish_symbol
 
   switch $fish_bind_mode
     case "default"
-      set pre_prompt_bgcolor $pureish_bgcolor_04
+      set pre_prompt_bgcolor $pureish_bgcolor_14
       set pre_prompt_type "N"
     case "visual"
-      set pre_prompt_bgcolor $pureish_bgcolor_14
+      set pre_prompt_bgcolor $pureish_bgcolor_03
       set pre_prompt_type "V"
     case "replace_one"
-      set pre_prompt_bgcolor $pureish_bgcolor_03
+      set pre_prompt_bgcolor $pureish_bgcolor_04
       set pre_prompt_type "R"
   end
 
@@ -31,7 +31,7 @@ function __pureish_symbol
 
   if set -q __pureish_fetching
     set prompt_color $pureish_color_03
-    echo -n "$pureish_color_03•"
+    echo -n "$pureish_color_216•"
   end
 
   echo -sn $pre_prompt$prompt_color$prompt_symbol$pureish_color_normal

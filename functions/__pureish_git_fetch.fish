@@ -1,4 +1,8 @@
 function __pureish_git_fetch
+  if test $__pureish_new_session -eq 1
+    return 0
+  end
+
   if set -q __pureish_fetching
     return 0
   end
