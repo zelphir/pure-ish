@@ -31,7 +31,7 @@ function __pureish_symbol
 
   if set -q __pureish_fetching
     set prompt_color $pureish_color_03
-    echo -n "$pureish_color_216•"
+    set prompt_symbol \Uf9e5
   end
 
   echo -sn $pre_prompt$prompt_color$prompt_symbol$pureish_color_normal
